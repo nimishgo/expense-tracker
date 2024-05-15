@@ -1,8 +1,172 @@
 #root {
-  max-width: 100vw;
   margin: 0 0;
   padding: 1rem;
   text-align: center;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+  
+}
+
+
+.modal_shell {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+  justify-content: center;
+  position: absolute;
+  top : 0;
+  left:  0;
+  background-color: rgba(77, 69, 69, 0.388);
+  backdrop-filter: blur(4px);
+}
+
+.form_input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  height: 1.2em;
+  width: 90%;
+}
+
+
+.form_income {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid rgba(245, 245, 220, 0.456);
+  padding: 2em;
+  border-radius: 25px;
+  background-color: rgb(0, 0, 0);
+}
+
+#input_label {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.form_buttons {
+  display: flex;
+  width: 20em;
+  justify-content: space-between;
+}
+
+.window_one {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  background-color: #aaa;
+  border-radius: 1em;
+}
+
+
+.wallet_window {
+  width: calc(33.33% - 1rem); 
+  margin-right: 1rem;
+  box-sizing: border-box; 
+  border: 1px solid #ccc; 
+  padding: 4rem; 
+  background-color: #222;
+  border-radius: 25px;
+}
+.ExpensePieChart {
+  display: flex;
+  padding: 2em;
+}
+
+.bottom_info {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.bar_chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+
+
+.expense_list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .window_one {
+    flex-direction: column; 
+  }
+  
+  .wallet_window {
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 1rem; 
+  }
+  
+  .bottom_info {
+    flex-direction: column; 
+  }
+  
+  .bar_chart {
+    width: 90%; 
+    margin-bottom: 1rem; /* Add margin to separate from the list */
+  }
+  
+  .expense_list {
+    width: 90%; /* Reduce width to avoid overlapping */
+  }
+
+  .bottom_info {
+    height: 110vh;
+  }
+
+  .items {
+    width: 50vw;
+  }
+}
+
+
+.items {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  background-color: #151515;
+  width: 100%;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.expense_lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 50vw;
+  height: 30vh;
+}
 

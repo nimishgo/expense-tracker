@@ -1,0 +1,3 @@
+const DEFAULT_INCOME = 5000;
+
+export { DEFAULT_INCOME };
